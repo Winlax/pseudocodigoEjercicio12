@@ -1,0 +1,59 @@
+Algoritmo Ejercicio12
+	
+	Mujeres = 0
+	Hombres = 0
+	sumaMujeres = 0
+	sumaHombres = 0
+	edades = 0
+	sumaEdades = 0
+	
+	Hacer
+		
+		Escribir "Ingrese su sexo ( H / M )"
+		leer Sexo
+		
+		Escribir "Ingrese su edad"
+		leer Edad
+		
+		si Sexo = "M" Entonces
+			
+			Escribir "Ingrese su altura" 
+			leer Altura
+			
+			si Altura >= 0 Entonces
+				
+				sumaMujeres = sumaMujeres + Altura
+				Mujeres = Mujeres + 1
+
+			FinSi
+			
+		FinSi
+		
+		si Sexo = "H" Entonces
+			
+			Escribir "Ingrese su altura"
+			leer Altura 
+			
+			si Altura >= 0 Entonces
+				
+				sumaHombres = sumaHombres + Altura
+				Hombres = Hombres + 1
+
+			FinSi
+			
+		FinSi
+		
+		sumaEdades = sumaEdades + Edad
+		edades = edades + 1
+		
+	Hasta Que Altura < 0
+	
+	PromedioAlturaM = sumaMujeres / Mujeres
+	PromedioAlturaH = sumaHombres / Hombres
+	PromedioEdades = sumaEdades / edades
+	
+	Escribir "El promedio de altura de las mujeres es: " PromedioAlturaM
+	Escribir "El promedio de altura de los hombres es: " PromedioAlturaH
+	Escribir "El promedio de edad de los participantes es: " PromedioEdades
+	
+FinAlgoritmo
